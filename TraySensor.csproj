@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TraySensor</RootNamespace>
+    <AssemblyName>TraySensor</AssemblyName>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationDefaultFont>Microsoft YaHei UI, 9pt</ApplicationDefaultFont>
+
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>embedded</DebugType>
+
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>traysensor.ico</ApplicationIcon>
+    <StartupObject>TraySensor.Program</StartupObject>
+
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="HardwareMonitor.cs" />
+    <Compile Include="FloatWindow.cs" />
+    <Compile Include="TrayApplicationContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="traysensor.ico" />
+  </ItemGroup>
+
+</Project>

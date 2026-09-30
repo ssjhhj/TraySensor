@@ -1,0 +1,131 @@
+# ========================
+# .NET / Visual Studio / Rider
+# ========================
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options directory
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be found in multiple places across a repo
+**/packages/*
+!**/packages/build/
+# NuGet v3 native fallback
+nuget.lock
+
+# Local configuration folder (SQL, LocalDB, etc)
+.vsconfig
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# Visual F# tools
+.fs/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode
+.JustCode
+
+# TeamCity is a JetBrains build server product
+._TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# AxoCover
+.axoCover/*
+!.axoCover/settings.json
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# Visual Studio history
+.vshistory/
+# ClickOnce output
+*.appref-ms
+
+# Publish output (single file exe etc.)
+publish/
+app.publish/
+
+# ========================
+# TraySensor 项目私有产物
+# ========================
+
+# 运行时生成的日志（用户电脑上才会出现，禁止入库）
+TraySensor_Error.log
+TraySensor_Sensors.log
+
+# 生成的应用图标（可由 IconBuilder 从 traysensor.jpg 重新生成，可选忽略；如果希望入库就删除下面这行）
+# traysensor.ico
+
+# 发布后用户复制出来的旧版 exe
+*_old.exe
+*.bak
+
+# ========================
+# Windows / 系统文件
+# ========================
+
+# Windows 缩略图缓存
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 临时 Office 文件
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+
+# ========================
+# 用户私有的环境 / 配置
+# ========================
+
+# 本地开发环境变量
+.env
+.env.local
+.env.*.local
+appsettings*.local.json
+appsettings*.secret.json
+secrets.json
+
+# 本地脚本 / 临时工具
+*.local.ps1
+*.local.bat
+*.local.cmd
+
+# ========================
+# LibreHardwareMonitor 参考源码（作为本地参考副本，不入库以避免体积膨胀；GitHub 可直接下载官方源码）
+# 如果你希望把它入库一起管理，把下面两行删掉即可。
+LibreHardwareMonitor/**
+!LibreHardwareMonitor/README.md
